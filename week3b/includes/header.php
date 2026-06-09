@@ -11,13 +11,13 @@ if (session_status() === PHP_SESSION_NONE) {
     <title>Vintage Vault — <?= $pageTitle ?? 'Curated Vintage Goods' ?></title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/week1-brenda/week1b/css/style.css">
+    <link rel="stylesheet" href="/week1-brenda/week3b/css/style.css">
 </head>
 <body>
 
 <nav class="navbar navbar-expand-lg vv-navbar">
     <div class="container">
-        <a class="navbar-brand vv-logo" href="//week1-brenda/week1b//index.php">
+        <a class="navbar-brand vv-logo" href="/week1-brenda/week3b/index.php">
             Vintage Vault
         </a>
 
@@ -30,10 +30,10 @@ if (session_status() === PHP_SESSION_NONE) {
         <div class="collapse navbar-collapse" id="navMenu">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="//week1-brenda/week1b//index.php">Home</a>
+                    <a class="nav-link" href="/week1-brenda/week3b/index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="//week1-brenda/week1b//shop.php">Shop</a>
+                    <a class="nav-link" href="/week1-brenda/week3b/shop.php">Shop</a>
                 </li>
             </ul>
 
@@ -41,7 +41,7 @@ if (session_status() === PHP_SESSION_NONE) {
 
                 <!-- Cart -->
                 <li class="nav-item">
-                    <a class="nav-link" href="//week1-brenda/week1b//cart.php">
+                    <a class="nav-link" href="/week1-brenda/week3b/cart.php">
                         🛒 Cart
                         <?php
                         if (isset($_SESSION['user_id']) && isset($pdo)) {
@@ -70,30 +70,30 @@ if (session_status() === PHP_SESSION_NONE) {
                         <li class="nav-item">
                             <a class="nav-link"
                                style="color:#f0c070 !important"
-                               href="//week1-brenda/week1b//admin/dashboard.php">
+                               href="/week1-brenda/week3b/admin/dashboard.php">
                                Admin
                             </a>
                         </li>
                     <?php else: ?>
                         <li class="nav-item">
                             <a class="nav-link"
-                               href="//week1-brenda/week1b//user/dashboard.php">
+                               href="/week1-brenda/week3b/user/dashboard.php">
                                My Account
                             </a>
                         </li>
                     <?php endif; ?>
                     <li class="nav-item">
                         <a class="nav-link"
-                           href="//week1-brenda/week1b//logout.php">Logout</a>
+                           href="/week1-brenda/week3b/logout.php">Logout</a>
                     </li>
                 <?php else: ?>
                     <li class="nav-item">
                         <a class="nav-link"
-                           href="//week1-brenda/week1b//login.php">Login</a>
+                           href="/week1-brenda/week3b/login.php">Login</a>
                     </li>
                     <li class="nav-item">
                         <a class="btn vv-btn-outline"
-                           href="//week1-brenda/week1b//register.php">Register</a>
+                           href="/week1-brenda/week3b/register.php">Register</a>
                     </li>
                 <?php endif; ?>
 

@@ -1,4 +1,4 @@
-// /week1-brenda/week1b//js/main.js
+// /week1-brenda/week3b//js/main.js
 
 // 1. SMOOTH PAGE LOAD
 document.body.style.opacity    = '0';
@@ -74,7 +74,7 @@ document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
         button.textContent = 'Adding...';
         button.disabled    = true;
 
-        fetch('//week1-brenda/week1b//cart_action.php', {
+        fetch('/week1-brenda/week3b/cart_action.php', {
             method:  'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
             body:    `action=add&product_id=${productId}`
@@ -94,7 +94,7 @@ document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
             } else if (data.redirect) {
                 showToast('Please log in to add items to cart!');
                 setTimeout(() => {
-                    window.location.href = '//week1-brenda/week1b//login.php';
+                    window.location.href = '/week1-brenda/week3b/login.php';
                 }, 1500);
                 button.textContent = 'Add to Cart';
                 button.disabled    = false;
@@ -126,7 +126,7 @@ if (searchInput && suggestionsBox) {
             return;
         }
         timer = setTimeout(() => {
-            fetch(`//week1-brenda/week1b//search_suggestions.php?q=${encodeURIComponent(q)}`)
+            fetch(`/week1-brenda/week3b/search_suggestions.php?q=${encodeURIComponent(q)}`)
             .then(r => r.json())
             .then(results => {
                 if (!results.length) {
@@ -134,7 +134,7 @@ if (searchInput && suggestionsBox) {
                     return;
                 }
                 suggestionsBox.innerHTML = results.map(item => `
-                    <div onclick="window.location='//week1-brenda/week1b//product.php?id=${item.id}'"
+                    <div onclick="window.location='/week1-brenda/week3b/product.php?id=${item.id}'"
                          style="padding:10px 16px; cursor:pointer;
                                 border-bottom:1px solid #ede4d3;
                                 font-size:0.88rem; color:#4a3628;
@@ -167,7 +167,7 @@ if (searchInput && suggestionsBox) {
     searchInput.addEventListener('keypress', function (e) {
         if (e.key === 'Enter') {
             window.location.href =
-                `//week1-brenda/week1b//shop.php?search=${encodeURIComponent(this.value)}`;
+                `/week1-brenda/week3b/shop.php?search=${encodeURIComponent(this.value)}`;
         }
     });
 }
@@ -184,7 +184,7 @@ document.querySelectorAll('.qty-btn').forEach(btn => {
         newQty     = action === 'increase' ? newQty + 1 : newQty - 1;
         if (newQty < 1) newQty = 1;
 
-        fetch('//week1-brenda/week1b//cart_action.php', {
+        fetch('/week1-brenda/week3b/cart_action.php', {
             method:  'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
             body:    `action=update&product_id=${productId}&quantity=${newQty}`
@@ -213,7 +213,7 @@ document.querySelectorAll('.remove-item-btn').forEach(btn => {
         const productId = this.dataset.id;
         const row       = document.getElementById(`cart-row-${productId}`);
 
-        fetch('//week1-brenda/week1b//cart_action.php', {
+        fetch('/week1-brenda/week3b/cart_action.php', {
             method:  'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
             body:    `action=remove&product_id=${productId}`

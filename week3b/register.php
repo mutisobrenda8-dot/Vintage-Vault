@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                  VALUES (?, ?, ?, 'customer')"
             )->execute([$name, $email, $hashed]);
             $success = 'Account created! You can now
-                <a href="//week1-brenda/week1b//login.php">log in</a>.';
+                <a href="/week1-brenda/week3b/login.php">log in</a>.';
         }
     }
 }
@@ -82,7 +82,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <p class="text-center mt-3"
            style="font-size:0.8rem; color:var(--vv-muted)">
             Already have an account?
-            <a href="//week1-brenda/week1b//login.php">Sign in</a>
+            <a href="/week1-brenda/week3b/login.php">Sign in</a>
         </p>
     </div>
 </div>

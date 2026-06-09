@@ -40,7 +40,7 @@ $icons = [
     <div class="row g-4">
         <?php foreach ($categories as $cat): ?>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <a href="/week1-brenda/week1b/shop.php?category=<?= $cat['id'] ?>"
+            <a href="/week1-brenda/week3b/shop.php?category=<?= $cat['id'] ?>"
                style="text-decoration:none;">
                 <div style="background:#faf6ef;
                             border:1px solid var(--vv-parchment);

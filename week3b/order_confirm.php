@@ -4,13 +4,13 @@ require 'db.php';
 require 'includes/header.php';
 
 if (!isset($_SESSION['user_id'])) {
-    header('Location: //week1-brenda/week1b//login.php');
+    header('Location: /week1-brenda/week3b/login.php');
     exit;
 }
 
 $id = $_GET['id'] ?? null;
 if (!$id || !is_numeric($id)) {
-    header('Location: //week1-brenda/week1b//index.php');
+    header('Location: /week1-brenda/week3b/index.php');
     exit;
 }
 
@@ -24,7 +24,7 @@ $stmt->execute([$id, $_SESSION['user_id']]);
 $order = $stmt->fetch();
 
 if (!$order) {
-    header('Location: //week1-brenda/week1b//index.php');
+    header('Location: /week1-brenda/week3b/index.php');
     exit;
 }
 
@@ -114,11 +114,11 @@ $orderItems = $items->fetchAll();
         </div>
 
         <div style="display:flex; gap:12px; justify-content:center;">
-            <a href="//week1-brenda/week1b//user/dashboard.php"
+            <a href="/week1-brenda/week3b/user/dashboard.php"
                class="btn btn-vv-primary px-4">
                 View My Orders
             </a>
-            <a href="//week1-brenda/week1b//shop.php"
+            <a href="/week1-brenda/week3b/shop.php"
                style="padding:8px 20px; border:1px solid var(--vv-gold);
                       color:var(--vv-brown); font-size:0.75rem;
                       letter-spacing:1.5px; text-transform:uppercase;

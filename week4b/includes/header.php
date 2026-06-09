@@ -31,7 +31,7 @@ if (session_status() === PHP_SESSION_NONE) {
                     </li>
                     <li class="nav-item">
                         <a class="nav-link"
-                           href="/week1-brenda/Week4/dashboard.php">
+                           href="/week1-brenda/Week4b/dashboard.php">
                             Dashboard
                         </a>
                     </li>

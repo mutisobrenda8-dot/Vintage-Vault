@@ -23,9 +23,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION['user_email'] = $user['email'];
 
             if ($user['role'] === 'admin') {
-                header('Location: //week1-brenda/week1b//admin/dashboard.php');
+                header('Location: /week1-brenda/week3b/admin/dashboard.php');
             } else {
-                header('Location: //week1-brenda/week1b//user/dashboard.php');
+                header('Location: /week1-brenda/week3b/user/dashboard.php');
             }
             exit;
         } else {
@@ -68,7 +68,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <p class="text-center mt-3"
            style="font-size:0.8rem; color:var(--vv-muted)">
             No account?
-            <a href="//week1-brenda/week1b//register.php">Register here</a>
+            <a href="/week1-brenda/week3b/register.php">Register here</a>
         </p>
     </div>
 </div>

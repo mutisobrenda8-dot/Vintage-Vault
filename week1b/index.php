@@ -25,7 +25,7 @@ $products = $stmt->fetchAll();  // $products is now an array of rows
         <p class="vv-section-title justify-content-center" style="color:#c9b49a">Curated since 2024</p>
         <h1>Treasures from another era</h1>
         <p class="lead">Vintage books · Ceramics · Vinyl · Jewellery · Cameras</p>
-        <a href="/week1/shop.php" class="vv-hero-btn">Explore the collection</a>
+        <a href="/week1-brenda/week1b/shop.php" class="vv-hero-btn">Explore the collection</a>
     </div>
 </section>
 
@@ -41,7 +41,7 @@ $products = $stmt->fetchAll();  // $products is now an array of rows
                 <!-- Product image (or placeholder emoji if no image yet) -->
                 <div class="vv-product-img">
                     <?php if ($product['image'] && file_exists("images/" . $product['image'])): ?>
-                        <img src="/week1/images/<?= htmlspecialchars($product['image']) ?>"
+                        <img src="/week1-brenda/week1b/images/<?= htmlspecialchars($product['image']) ?>"
                              alt="<?= htmlspecialchars($product['name']) ?>"
                              class="img-fluid w-100 h-100" style="object-fit:cover">
                     <?php else: ?>
@@ -54,7 +54,7 @@ $products = $stmt->fetchAll();  // $products is now an array of rows
                     <div class="vv-product-name"><?= htmlspecialchars($product['name']) ?></div>
                     <div class="mt-auto d-flex justify-content-between align-items-center">
                         <span class="vv-product-price">$<?= number_format($product['price'], 2) ?></span>
-                        <a href="/week1/product.php?id=<?= $product['id'] ?>"
+                        <a href="/week1-brenda/week1b/product.php?id=<?= $product['id'] ?>"
                            class="btn btn-vv-primary btn-sm">View</a>
                     </div>
                 </div>

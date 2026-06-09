@@ -1,0 +1,181 @@
+/* Week4/css/style.css */
+:root {
+    --vv-cream:     #f5f0e8;
+    --vv-parchment: #ede4d3;
+    --vv-gold:      #c9b49a;
+    --vv-brown:     #7a5230;
+    --vv-dark:      #3d2b1f;
+    --vv-text:      #4a3628;
+    --vv-muted:     #9a7a58;
+    --font-serif:   'Playfair Display', Georgia, serif;
+    --font-sans:    'Lato', sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    background-color: var(--vv-cream);
+    color: var(--vv-text);
+    font-family: var(--font-sans);
+    font-weight: 300;
+    line-height: 1.7;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-serif);
+    color: var(--vv-dark);
+}
+
+a { color: var(--vv-brown); text-decoration: none; }
+a:hover { color: var(--vv-dark); }
+
+/* NAVBAR */
+.vv-navbar {
+    background-color: var(--vv-dark);
+    padding: 12px 0;
+    border-bottom: 2px solid var(--vv-brown);
+}
+.vv-logo {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 1.6rem;
+    color: var(--vv-gold) !important;
+    letter-spacing: 2px;
+}
+.vv-navbar .nav-link {
+    color: var(--vv-gold) !important;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+.vv-navbar .nav-link:hover { color: #fff !important; }
+.vv-btn-outline {
+    border: 1.5px solid var(--vv-gold);
+    color: var(--vv-gold) !important;
+    font-size: 0.75rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    transition: all 0.2s;
+}
+.vv-btn-outline:hover {
+    background: var(--vv-gold);
+    color: var(--vv-dark) !important;
+}
+.vv-username { color: var(--vv-muted) !important; }
+
+/* FORMS */
+.vv-form-card {
+    background: #faf6ef;
+    border: 1px solid var(--vv-gold);
+    padding: 40px;
+    max-width: 480px;
+    margin: 40px auto;
+    border-radius: 4px;
+}
+.vv-form-card h2 {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 6px;
+    color: var(--vv-dark);
+}
+.vv-form-subtitle {
+    font-size: 0.8rem;
+    color: var(--vv-muted);
+    text-align: center;
+    margin-bottom: 28px;
+}
+.vv-form-card label {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--vv-brown);
+    font-weight: 700;
+}
+.vv-form-card .form-control {
+    background: var(--vv-cream);
+    border: 1px solid var(--vv-gold);
+    color: var(--vv-dark);
+    font-family: var(--font-serif);
+    border-radius: 0;
+    padding: 10px 14px;
+}
+.vv-form-card .form-control:focus {
+    background: var(--vv-cream);
+    border-color: var(--vv-brown);
+    box-shadow: 0 0 0 2px rgba(122,82,48,0.15);
+    color: var(--vv-dark);
+}
+
+/* BUTTONS */
+.btn-vv-primary {
+    background-color: var(--vv-dark);
+    color: var(--vv-gold);
+    border: none;
+    font-size: 0.75rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    transition: background 0.2s;
+    border-radius: 0;
+}
+.btn-vv-primary:hover {
+    background-color: var(--vv-brown);
+    color: #fff;
+}
+
+/* ALERTS */
+.vv-alert-error {
+    background: #fde8d8;
+    border-left: 3px solid #c0522a;
+    color: #7a2a10;
+    padding: 12px 16px;
+    font-size: 0.85rem;
+    margin-bottom: 16px;
+    border-radius: 2px;
+}
+.vv-alert-success {
+    background: #d4f0e0;
+    border-left: 3px solid #2d7a4f;
+    color: #1a4d30;
+    padding: 12px 16px;
+    font-size: 0.85rem;
+    margin-bottom: 16px;
+    border-radius: 2px;
+}
+
+/* DASHBOARD */
+.vv-dashboard-card {
+    background: #faf6ef;
+    border: 1px solid var(--vv-parchment);
+    border-radius: 6px;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+/* FOOTER */
+.vv-footer {
+    background-color: var(--vv-dark);
+    padding: 40px 0 24px;
+    border-top: 2px solid var(--vv-brown);
+}
+.vv-footer-logo {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 1.5rem;
+    color: var(--vv-gold);
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+}
+.vv-footer-sub {
+    font-size: 0.8rem;
+    color: var(--vv-muted);
+}
+.vv-footer-copy {
+    font-size: 0.7rem;
+    color: #5c4438;
+    margin-top: 12px;
+}

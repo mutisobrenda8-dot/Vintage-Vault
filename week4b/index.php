@@ -94,7 +94,7 @@ $name = htmlspecialchars($_GET['name'] ?? '');
                 <p style="font-size:0.85rem; color:var(--vv-muted);">
                     HTML forms, PHP integration and authentication
                 </p>
-                <a href="/week1-brenda/Week4b/login.php"
+                <a href="/vintage-vault/week4b//login.php"
                    style="font-size:0.7rem; letter-spacing:1px;
                           text-transform:uppercase; color:var(--vv-brown);">
                     View Login →

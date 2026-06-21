@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION['user_role'] = $user['role'];
 
             // Redirect to dashboard
-            header('Location: /week1-brenda/Week4b/dashboard.php');
+            header('Location: /vintage-vault/week4b//dashboard.php');
             exit;
         } else {
             $error = 'Incorrect email or password.';

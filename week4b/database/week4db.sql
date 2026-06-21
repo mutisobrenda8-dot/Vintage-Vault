@@ -1,11 +1,11 @@
 -- Week4/database/week4db.sql
 -- Week 4 Database Export
 
--- This week uses the same vintage_vault_db database
+-- This week uses the same vintage-vault_db database
 -- Connection details:
 -- Host: localhost
 -- Port: 3307
--- Database: vintage_vault_db
+-- Database: vintage-vault_db
 -- Username: root
 -- Password: (empty)
 

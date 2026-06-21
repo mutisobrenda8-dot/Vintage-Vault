@@ -18,14 +18,14 @@ if (session_status() === PHP_SESSION_NONE) {
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 
     <!-- Our CSS -->
-    <link rel="stylesheet" href="/week1-brenda/week1b/css/style.css">
+    <link rel="stylesheet" href="/vintage-vault/week1b/css/style.css">
 <body>
 
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg vv-navbar">
     <div class="container">
 
-        <a class="navbar-brand vv-logo" href="/week1-brenda/week1b/index.php">Vintage Vault</a>
+        <a class="navbar-brand vv-logo" href="/vintage-vault/week1b/index.php">Vintage Vault</a>
 
         <button class="navbar-toggler" type="button"
                 data-bs-toggle="collapse"
@@ -38,13 +38,13 @@ if (session_status() === PHP_SESSION_NONE) {
             <!-- Left links -->
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="/week1-brenda/week1b/index.php">Home</a>
+                    <a class="nav-link" href="/vintage-vault/week1b/index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/week1-brenda/week1b/shop.php">Shop</a>
+                    <a class="nav-link" href="/vintage-vault/week1b/shop.php">Shop</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/week1-brenda/week1b/shop.php">Categories</a>
+                    <a class="nav-link" href="/vintage-vault/week1b/shop.php">Categories</a>
                 </li>
             </ul>
 
@@ -53,7 +53,7 @@ if (session_status() === PHP_SESSION_NONE) {
 
                 <!-- Cart -->
                 <li class="nav-item">
-                    <a class="nav-link" href="/week1-brenda/week1b/cart.php">
+                    <a class="nav-link" href="/vintage-vault/week1b/cart.php">
                         🛒 Cart
                         <?php
                         // Show cart count if logged in
@@ -87,14 +87,14 @@ if (session_status() === PHP_SESSION_NONE) {
                     <?php if ($_SESSION['user_role'] === 'admin'): ?>
                         <li class="nav-item">
                             <a class="nav-link" style="color:#f0c070 !important"
-                               href="/week1-brenda/week1b/admin/dashboard.php">
+                               href="/vintage-vault/week1b/admin/dashboard.php">
                                 Admin
                             </a>
                         </li>
                     <?php else: ?>
                         <li class="nav-item">
                             <a class="nav-link"
-                               href="/week1-brenda/week1b/user/dashboard.php">
+                               href="/vintage-vault/week1b/user/dashboard.php">
                                 My Account
                             </a>
                         </li>
@@ -102,17 +102,17 @@ if (session_status() === PHP_SESSION_NONE) {
 
                     <li class="nav-item">
                         <a class="nav-link"
-                           href="/week1-brenda/week1b/logout.php">Logout</a>
+                           href="/vintage-vault/week1b/logout.php">Logout</a>
                     </li>
 
                 <?php else: ?>
                     <!-- Not logged in -->
                     <li class="nav-item">
-                        <a class="nav-link" href="/week1-brenda/week1b/login.php">Login</a>
+                        <a class="nav-link" href="/vintage-vault/week1b/login.php">Login</a>
                     </li>
                     <li class="nav-item">
                         <a class="btn vv-btn-outline"
-                           href="/week1-brenda/week1b/register.php">Register</a>
+                           href="/vintage-vault/week1b/register.php">Register</a>
                     </li>
                 <?php endif; ?>
 

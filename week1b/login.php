@@ -31,9 +31,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             // Redirect based on role
             if ($user['role'] === 'admin') {
-                header('Location: /week1-brenda/week1b/admin/dashboard.php');
+                header('Location: /vintage-vault/week1b/admin/dashboard.php');
             } else {
-                header('Location: /week1-brenda/week1b/user/dashboard.php');
+                header('Location: /vintage-vault/week1b/user/dashboard.php');
             }
             exit;
 
@@ -86,7 +86,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <p class="text-center mt-3"
            style="font-size:0.8rem; color:var(--vv-muted)">
             No account yet?
-            <a href="/week1-brenda/week1b/register.php">Register here</a>
+            <a href="/vintage-vault/week1b/register.php">Register here</a>
         </p>
 
     </div>

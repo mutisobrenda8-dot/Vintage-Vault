@@ -4,8 +4,8 @@
 // We use PDO — it's safer than the old mysql_ functions.
 
 $host     = 'localhost';      // XAMPP always uses localhost
-$port     = '3307';          // ← Your custom XAMPP MySQL port
-$dbname   = 'vintage_vault_db';
+$port     = '3306';          // ← Your custom XAMPP MySQL port
+$dbname   = 'vintage-vault_db';
 $username = 'root';           // Default XAMPP username
 $password = '';               // Default XAMPP password is EMPTY
 

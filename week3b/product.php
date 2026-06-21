@@ -5,7 +5,7 @@ require 'includes/header.php';
 
 $id = $_GET['id'] ?? null;
 if (!$id || !is_numeric($id)) {
-    header('Location: /week1-brenda/week3b/shop.php');
+    header('Location: /vintage-vault/week3b//shop.php');
     exit;
 }
 
@@ -19,7 +19,7 @@ $stmt->execute([$id]);
 $product = $stmt->fetch();
 
 if (!$product) {
-    header('Location: /week1-brenda/week3b/shop.php');
+    header('Location: /vintage-vault/week3b//shop.php');
     exit;
 }
 
@@ -56,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'
             ")->execute([
                 $_SESSION['user_id'], $id, $rating, $comment
             ]);
-            header("Location: /week1-brenda/week3b/product.php?id=$id");
+            header("Location: /vintage-vault/week3b//product.php?id=$id");
             exit;
         }
     }
@@ -79,13 +79,13 @@ $relatedProducts = $related->fetchAll();
     <!-- Breadcrumb -->
     <nav style="font-size:0.78rem; color:var(--vv-muted);
                 margin-bottom:24px;">
-        <a href="/week1-brenda/week3b/index.php"
+        <a href="/vintage-vault/week3b//index.php"
            style="color:var(--vv-brown);">Home</a>
         <span style="margin:0 8px;">›</span>
-        <a href="/week1-brenda/week3b/shop.php"
+        <a href="/vintage-vault/week3b//shop.php"
            style="color:var(--vv-brown);">Shop</a>
         <span style="margin:0 8px;">›</span>
-        <a href="/week1-brenda/week3b/shop.php?category=<?= $product['category_id'] ?>"
+        <a href="/vintage-vault/week3b//shop.php?category=<?= $product['category_id'] ?>"
            style="color:var(--vv-brown);">
             <?= htmlspecialchars($product['category_name']) ?>
         </a>
@@ -108,7 +108,7 @@ $relatedProducts = $related->fetchAll();
                 if ($product['image'] !== 'placeholder.jpg'
                     && file_exists($img)):
                 ?>
-                    <img src="/week1-brenda/week3b/<?= $img ?>"
+                    <img src="/vintage-vault/week3b//<?= $img ?>"
                          alt="<?= htmlspecialchars($product['name']) ?>"
                          style="width:100%; height:100%;
                                 object-fit:cover;">
@@ -170,7 +170,7 @@ $relatedProducts = $related->fetchAll();
                         data-name="<?= htmlspecialchars($product['name']) ?>">
                     Add to Cart
                 </button>
-                <a href="/week1-brenda/week3b/cart.php"
+                <a href="/vintage-vault/week3b//cart.php"
                    style="margin-left:12px; font-size:0.8rem;
                           color:var(--vv-brown);">
                     View Cart →
@@ -240,7 +240,7 @@ $relatedProducts = $related->fetchAll();
         <?php else: ?>
             <p style="font-size:0.85rem; color:var(--vv-muted);
                       margin-bottom:24px;">
-                <a href="/week1-brenda/week3b/login.php">Log in</a>
+                <a href="/vintage-vault/week3b//login.php">Log in</a>
                 to leave a review.
             </p>
         <?php endif; ?>
@@ -283,7 +283,7 @@ $relatedProducts = $related->fetchAll();
             <?php foreach ($relatedProducts as $rp): ?>
             <div class="col-12 col-sm-4">
                 <div class="card vv-product-card border-0 h-100">
-                    <a href="/week1-brenda/week3b/product.php?id=<?= $rp['id'] ?>">
+                    <a href="/vintage-vault/week3b//product.php?id=<?= $rp['id'] ?>">
                         <div class="vv-product-img"
                              style="height:160px;">🏺</div>
                     </a>

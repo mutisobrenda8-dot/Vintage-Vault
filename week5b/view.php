@@ -8,7 +8,7 @@ require 'includes/header.php';
 
 $id = $_GET['id'] ?? null;
 if (!$id || !is_numeric($id)) {
-    header('Location: /week1-brenda/Week5b/index.php');
+    header('Location: /vintage-vault/week1b//index.php');
     exit;
 }
 
@@ -23,7 +23,7 @@ $stmt->execute([$id]);
 $product = $stmt->fetch();
 
 if (!$product) {
-    header('Location: /week1-brenda/Week5b/index.php');
+    header('Location: /vintage-vault/week1b//index.php');
     exit;
 }
 ?>
@@ -32,7 +32,7 @@ if (!$product) {
     <div style="max-width:700px; margin:0 auto;">
 
         <div style="margin-bottom:24px;">
-            <a href="/week1-brenda/Week5b/index.php"
+            <a href="/vintage-vault/week1b//index.php"
                style="font-size:0.78rem; letter-spacing:1px;
                       text-transform:uppercase; color:var(--vv-muted);">
                 ← Back to Products
@@ -111,11 +111,11 @@ if (!$product) {
                 </table>
 
                 <div style="display:flex; gap:12px; margin-top:24px;">
-                    <a href="/week1-brenda/Week5b/edit.php?id=<?= $product['id'] ?>"
+                    <a href="/vintage-vault/week1b//edit.php?id=<?= $product['id'] ?>"
                        class="btn btn-vv-primary px-4">
                         ✏️ Edit Product
                     </a>
-                    <a href="/week1-brenda/Week5b/delete.php?id=<?= $product['id'] ?>"
+                    <a href="/vintage-vault/week1b//delete.php?id=<?= $product['id'] ?>"
                        class="btn-confirm-delete"
                        style="padding:8px 20px;
                               background:#fde8e8; color:#8b1a1a;

@@ -1,7 +1,7 @@
 -- Week5/database/week5db.sql
 -- Week 5 — Database CRUD Operations
 
--- Database: vintage_vault_db
+-- Database: vintage-vault_db
 -- This file documents the SQL queries used in Week 5
 
 -- CREATE TABLE example

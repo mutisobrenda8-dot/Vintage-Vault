@@ -32,7 +32,7 @@ $products = $pdo->query("
         </p>
 
         <!-- Search Bar -->
-        <form action="/week1-brenda/week3b/shop.php" method="GET"
+        <form action="/vintage-vault/week3b//shop.php" method="GET"
               style="display:flex; max-width:480px;
                      margin:20px auto 0; position:relative;">
             <input type="text" name="search" id="heroSearch"
@@ -62,7 +62,7 @@ $products = $pdo->query("
                     left:50%; transform:translateX(-50%);">
         </div>
 
-        <a href="/week1-brenda/week3b/shop.php" class="vv-hero-btn"
+        <a href="/vintage-vault/week3b//shop.php" class="vv-hero-btn"
            style="display:inline-block; margin-top:20px;">
             Explore the collection
         </a>
@@ -76,11 +76,11 @@ $products = $pdo->query("
     <div class="container">
         <div style="display:flex; gap:8px;
                     flex-wrap:wrap; align-items:center;">
-            <a href="/week1-brenda/week3b/shop.php" class="vv-cat-pill active">
+            <a href="/vintage-vault/week3b//shop.php" class="vv-cat-pill active">
                 All Items
             </a>
             <?php foreach ($categories as $cat): ?>
-                <a href="/week1-brenda/week3b/shop.php?category=<?= $cat['id'] ?>"
+                <a href="/vintage-vault/week3b//shop.php?category=<?= $cat['id'] ?>"
                    class="vv-cat-pill">
                     <?= htmlspecialchars($cat['name']) ?>
                 </a>
@@ -98,14 +98,14 @@ $products = $pdo->query("
         <div class="col-12 col-sm-6 col-lg-4">
             <div class="card vv-product-card border-0 h-100">
 
-                <a href="/week1-brenda/week3b/product.php?id=<?= $p['id'] ?>">
+                <a href="/vintage-vault/week3b//product.php?id=<?= $p['id'] ?>">
                     <div class="vv-product-img">
                         <?php
                         $img = 'images/products/' . $p['image'];
                         if ($p['image'] !== 'placeholder.jpg'
                             && file_exists($img)):
                         ?>
-                            <img src="/week1-brenda/week3b/<?= $img ?>"
+                            <img src="/vintage-vault/week3b//<?= $img ?>"
                                  alt="<?= htmlspecialchars($p['name']) ?>">
                         <?php else: ?>
                             🏺
@@ -117,7 +117,7 @@ $products = $pdo->query("
                     <div class="vv-product-category">
                         <?= htmlspecialchars($p['category_name']) ?>
                     </div>
-                    <a href="/week1-brenda/week3b/product.php?id=<?= $p['id'] ?>"
+                    <a href="/vintage-vault/week3b//product.php?id=<?= $p['id'] ?>"
                        style="text-decoration:none;">
                         <div class="vv-product-name">
                             <?= htmlspecialchars($p['name']) ?>
@@ -162,7 +162,7 @@ $products = $pdo->query("
     </div>
 
     <div class="text-center mt-5">
-        <a href="/week1-brenda/week3b/shop.php" class="vv-hero-btn"
+        <a href="/vintage-vault/week3b//shop.php" class="vv-hero-btn"
            style="color:var(--vv-dark);
                   border-color:var(--vv-brown);">
             View all items →

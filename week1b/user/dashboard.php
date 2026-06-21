@@ -3,11 +3,11 @@ $pageTitle = 'My Account';
 session_start();
 
 if (!isset($_SESSION['user_id'])) {
-    header('Location: /week1-brenda/week1b/login.php');
+    header('Location: /vintage-vault/week1b/login.php');
     exit;
 }
 if ($_SESSION['user_role'] === 'admin') {
-    header('Location: /week1-brenda/week1b/admin/dashboard.php');
+    header('Location: /vintage-vault/week1b/admin/dashboard.php');
     exit;
 }
 
@@ -454,13 +454,13 @@ $trackingSteps = [
                 id="btn-profile">
             👤 Edit Profile
         </button>
-        <a href="/week1-brenda/week1b/shop.php"
+        <a href="/vintage-vault/week1b/shop.php"
            style="padding:10px 20px; font-size:0.82rem;
                   letter-spacing:1px; text-transform:uppercase;
                   color:var(--vv-muted); text-decoration:none;">
             🏺 Browse Shop
         </a>
-        <a href="/week1-brenda/week1b/logout.php"
+        <a href="/vintage-vault/week1b/logout.php"
            style="padding:10px 20px; font-size:0.82rem;
                   letter-spacing:1px; text-transform:uppercase;
                   color:#c0522a; text-decoration:none;
@@ -478,7 +478,7 @@ $trackingSteps = [
                 <div class="ud-empty-text">
                     No orders yet
                 </div>
-                <a href="/week1-brenda/week1b/shop.php"
+                <a href="/vintage-vault/week1b/shop.php"
                    class="btn btn-vv-primary px-4">
                     Browse the Shop
                 </a>
@@ -650,7 +650,7 @@ $trackingSteps = [
             <div class="ud-card-header">
                 <h5 class="ud-card-title">My Cart</h5>
                 <?php if (!empty($cartItems)): ?>
-                    <a href="/week1-brenda/week1b/checkout.php"
+                    <a href="/vintage-vault/week1b/checkout.php"
                        class="btn btn-vv-primary">
                         Checkout →
                     </a>
@@ -661,7 +661,7 @@ $trackingSteps = [
                 <div class="ud-empty">
                     <div class="ud-empty-icon">🛒</div>
                     <div class="ud-empty-text">Your cart is empty</div>
-                    <a href="/week1-brenda/week1b/shop.php"
+                    <a href="/vintage-vault/week1b/shop.php"
                        class="btn btn-vv-primary">
                         Start Shopping
                     </a>
@@ -702,7 +702,7 @@ $trackingSteps = [
                     </span>
                 </div>
                 <div style="padding:16px 20px;">
-                    <a href="/week1-brenda/week1b/checkout.php"
+                    <a href="/vintage-vault/week1b/checkout.php"
                        class="btn btn-vv-primary w-100 py-2">
                         Proceed to Checkout →
                     </a>

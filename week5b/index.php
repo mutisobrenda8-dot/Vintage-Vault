@@ -35,7 +35,7 @@ $updated = $_GET['updated'] ?? false;
                 Week 5 — CRUD Operations Demo
             </p>
         </div>
-        <a href="/week1-brenda/Week5b/add.php"
+        <a href="/vintage-vault/week1b//add.php"
            class="btn btn-vv-primary px-4">
             ➕ Add Product
         </a>
@@ -86,7 +86,7 @@ $updated = $_GET['updated'] ?? false;
                       font-size:1.2rem; margin-bottom:16px;">
                 No products yet
             </p>
-            <a href="/week1-brenda/Week5b/add.php"
+            <a href="/vintage-vault/week1b//add.php"
                class="btn btn-vv-primary">
                 Add First Product
             </a>
@@ -165,7 +165,7 @@ $updated = $_GET['updated'] ?? false;
                     </td>
                     <td style="padding:12px 16px; white-space:nowrap;">
                         <!-- READ -->
-                        <a href="/week1-brenda/Week5b/view.php?id=<?= $p['id'] ?>"
+                        <a href="/vintage-vault/week1b//view.php?id=<?= $p['id'] ?>"
                            style="padding:4px 10px; font-size:0.72rem;
                                   letter-spacing:1px;
                                   text-transform:uppercase;
@@ -176,7 +176,7 @@ $updated = $_GET['updated'] ?? false;
                             👁️ View
                         </a>
                         <!-- UPDATE -->
-                        <a href="/week1-brenda/Week5b/edit.php?id=<?= $p['id'] ?>"
+                        <a href="/vintage-vault/week1b//edit.php?id=<?= $p['id'] ?>"
                            style="padding:4px 10px; font-size:0.72rem;
                                   letter-spacing:1px;
                                   text-transform:uppercase;
@@ -188,7 +188,7 @@ $updated = $_GET['updated'] ?? false;
                             ✏️ Edit
                         </a>
                         <!-- DELETE -->
-                        <a href="/week1-brenda/Week5b/delete.php?id=<?= $p['id'] ?>"
+                        <a href="/vintage-vault/week1b//delete.php?id=<?= $p['id'] ?>"
                            class="btn-confirm-delete"
                            style="padding:4px 10px; font-size:0.72rem;
                                   letter-spacing:1px;

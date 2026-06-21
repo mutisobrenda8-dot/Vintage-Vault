@@ -87,7 +87,7 @@ foreach ($categories as $cat) {
                 Categories
             </div>
             <nav style="display:flex; flex-direction:column; gap:4px;">
-                <a href="/week1-brenda/week3b/shop.php"
+                <a href="/vintage-vault/week3b//shop.php"
                    style="padding:8px 12px; font-size:0.82rem;
                           text-decoration:none;
                           background:<?= !$category
@@ -97,7 +97,7 @@ foreach ($categories as $cat) {
                     All Categories
                 </a>
                 <?php foreach ($categories as $cat): ?>
-                <a href="/week1-brenda/week3b/shop.php?category=<?= $cat['id'] ?>"
+                <a href="/vintage-vault/week3b//shop.php?category=<?= $cat['id'] ?>"
                    style="padding:8px 12px; font-size:0.82rem;
                           text-decoration:none;
                           background:<?= $category==$cat['id']
@@ -176,7 +176,7 @@ foreach ($categories as $cat) {
                 </p>
             </div>
             <?php if ($search || $category): ?>
-                <a href="/week1-brenda/week3b/shop.php"
+                <a href="/vintage-vault/week3b//shop.php"
                    style="font-size:0.75rem; letter-spacing:1px;
                           text-transform:uppercase; color:var(--vv-brown);">
                     ✕ Clear
@@ -191,7 +191,7 @@ foreach ($categories as $cat) {
                 <p style="font-family:var(--font-serif); font-size:1.2rem;">
                     No items found
                 </p>
-                <a href="/week1-brenda/week3b/shop.php" class="btn btn-vv-primary mt-3">
+                <a href="/vintage-vault/week3b//shop.php" class="btn btn-vv-primary mt-3">
                     View all items
                 </a>
             </div>
@@ -200,14 +200,14 @@ foreach ($categories as $cat) {
             <?php foreach ($products as $p): ?>
             <div class="col-12 col-sm-6 col-xl-4">
                 <div class="card vv-product-card border-0 h-100">
-                    <a href="/week1-brenda/week3b/product.php?id=<?= $p['id'] ?>">
+                    <a href="/vintage-vault/week3b//product.php?id=<?= $p['id'] ?>">
                         <div class="vv-product-img">
                             <?php
                             $img = 'images/products/' . $p['image'];
                             if ($p['image'] !== 'placeholder.jpg'
                                 && file_exists($img)):
                             ?>
-                                <img src="/week1-brenda/week3b/<?= $img ?>"
+                                <img src="/vintage-vault/week3b//<?= $img ?>"
                                      alt="<?= htmlspecialchars($p['name']) ?>">
                             <?php else: ?>
                                 🏺
@@ -218,7 +218,7 @@ foreach ($categories as $cat) {
                         <div class="vv-product-category">
                             <?= htmlspecialchars($p['category_name']) ?>
                         </div>
-                        <a href="/week1-brenda/week3b/product.php?id=<?= $p['id'] ?>"
+                        <a href="/vintage-vault/week3b//product.php?id=<?= $p['id'] ?>"
                            style="text-decoration:none;">
                             <div class="vv-product-name">
                                 <?= htmlspecialchars($p['name']) ?>

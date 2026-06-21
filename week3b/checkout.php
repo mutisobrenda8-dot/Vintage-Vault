@@ -4,7 +4,7 @@ require 'db.php';
 require 'includes/header.php';
 
 if (!isset($_SESSION['user_id'])) {
-    header('Location: /week1-brenda/week3b/login.php');
+    header('Location: /vintage-vault/week3b//login.php');
     exit;
 }
 
@@ -19,7 +19,7 @@ $stmt->execute([$_SESSION['user_id']]);
 $cartItems = $stmt->fetchAll();
 
 if (empty($cartItems)) {
-    header('Location: /week1-brenda/week3b/cart.php');
+    header('Location: /vintage-vault/week3b//cart.php');
     exit;
 }
 
@@ -79,7 +79,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         )->execute([$_SESSION['user_id']]);
 
         // Redirect to confirmation
-        header("Location: /week1-brenda/week3b/order_confirm.php?id=$orderId");
+        header("Location: /vintage-vault/week3b//order_confirm.php?id=$orderId");
         exit;
     }
 }

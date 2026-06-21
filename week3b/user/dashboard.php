@@ -3,11 +3,11 @@ $pageTitle = 'My Account';
 session_start();
 
 if (!isset($_SESSION['user_id'])) {
-    header('Location: /week1-brenda/week3b/login.php');
+    header('Location: /vintage-vault/week3b//login.php');
     exit;
 }
 if ($_SESSION['user_role'] === 'admin') {
-    header('Location: /week1-brenda/week3b/admin/dashboard.php');
+    header('Location: /vintage-vault/week3b//admin/dashboard.php');
     exit;
 }
 
@@ -136,10 +136,10 @@ $activeTab    = $_POST['active_tab'] ?? $_GET['tab'] ?? 'orders';
                         id="btn-profile">
                     👤 Edit Profile
                 </button>
-                <a href="/week1-brenda/week3b/shop.php" class="vv-user-nav-link">
+                <a href="/vintage-vault/week3b//shop.php" class="vv-user-nav-link">
                     🏺 Browse Shop
                 </a>
-                <a href="/week1-brenda/week3b/logout.php"
+                <a href="/vintage-vault/week3b//logout.php"
                    class="vv-user-nav-link vv-logout-link">
                     🚪 Logout
                 </a>
@@ -198,7 +198,7 @@ $activeTab    = $_POST['active_tab'] ?? $_GET['tab'] ?? 'orders';
                                 color:var(--vv-muted);">
                         <p style="font-size:3rem; margin-bottom:12px;">🏺</p>
                         <p style="margin-bottom:16px;">No orders yet.</p>
-                        <a href="/week1-brenda/week3b/shop.php"
+                        <a href="/vintage-vault/week3b//shop.php"
                            class="btn btn-vv-primary">Browse Shop</a>
                     </div>
                 <?php else: ?>
@@ -276,7 +276,7 @@ $activeTab    = $_POST['active_tab'] ?? $_GET['tab'] ?? 'orders';
                                 color:var(--vv-muted);">
                         <p style="font-size:3rem; margin-bottom:12px;">🛒</p>
                         <p style="margin-bottom:16px;">Your cart is empty.</p>
-                        <a href="/week1-brenda/week3b/shop.php"
+                        <a href="/vintage-vault/week3b//shop.php"
                            class="btn btn-vv-primary">Start Shopping</a>
                     </div>
                 <?php else: ?>
@@ -315,7 +315,7 @@ $activeTab    = $_POST['active_tab'] ?? $_GET['tab'] ?? 'orders';
                         </span>
                     </div>
                     <div style="padding:16px 20px;">
-                        <a href="/week1-brenda/week3b/checkout.php"
+                        <a href="/vintage-vault/week3b//checkout.php"
                            class="btn btn-vv-primary w-100 py-2">
                             Proceed to Checkout →
                         </a>

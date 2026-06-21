@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 "INSERT INTO users (name, email, password, role)
                  VALUES (?, ?, ?, 'customer')"
             )->execute([$name, $email, $hashed]);
-            $success = 'Account created! <a href="/week1-brenda/week1b/login.php">Log in here</a>.';
+            $success = 'Account created! <a href="/vintage-vault/week1b/login.php">Log in here</a>.';
         }
     }
 }
@@ -107,7 +107,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <p class="text-center mt-3"
            style="font-size:0.8rem; color:var(--vv-muted)">
             Already have an account?
-            <a href="/week1-brenda/week1b/login.php">Sign in</a>
+            <a href="/vintage-vault/week1b/login.php">Sign in</a>
         </p>
     </div>
 </div>

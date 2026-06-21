@@ -2,7 +2,7 @@
 if (session_status() === PHP_SESSION_NONE) session_start();
 if (!isset($_SESSION['user_id']) ||
     $_SESSION['user_role'] !== 'admin') {
-    header('Location: /week1-brenda/week1b/login.php');
+    header('Location: /vintage-vault/week1b/login.php');
     exit;
 }
 ?>
@@ -14,7 +14,7 @@ if (!isset($_SESSION['user_id']) ||
     <title>Admin — <?= $pageTitle ?? 'Dashboard' ?> | Vintage Vault</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/week1-brenda/week1b/css/admin.css">
+    <link rel="stylesheet" href="/vintage-vault/week1b/css/admin.css">
 </head>
 <body>
 
@@ -29,10 +29,10 @@ if (!isset($_SESSION['user_id']) ||
         <span class="admin-name">
             👤 <?= htmlspecialchars($_SESSION['user_name']) ?>
         </span>
-        <a href="/week1-brenda/week1b/index.php" class="topbar-btn" target="_blank">
+        <a href="/vintage-vault/week1b/index.php" class="topbar-btn" target="_blank">
             View Store
         </a>
-        <a href="/week1-brenda/week1b/logout.php" class="topbar-btn">Logout</a>
+        <a href="/vintage-vault/week1b/logout.php" class="topbar-btn">Logout</a>
     </div>
 </header>
 

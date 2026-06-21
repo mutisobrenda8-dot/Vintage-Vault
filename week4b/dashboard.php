@@ -7,7 +7,7 @@ require 'includes/header.php';
 
 // Protect page — redirect if not logged in
 if (!isset($_SESSION['user_id'])) {
-    header('Location: /week1-brenda/Week4b/login.php');
+    header('Location: /vintage-vault/week4b//login.php');
     exit;
 }
 ?>
@@ -213,7 +213,7 @@ if (!isset($_SESSION['user_id'])) {
 
     <!-- Logout -->
     <div style="text-align:center; margin-top:24px;">
-        <a href="/week1-brenda/Week4b/logout.php"
+        <a href="/vintage-vault/week4b//logout.php"
            style="font-size:0.8rem; letter-spacing:1px;
                   text-transform:uppercase; color:#c0522a;">
             🚪 Logout

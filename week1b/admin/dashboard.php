@@ -544,7 +544,7 @@ $monthlyRevenue = $pdo->query("
                 onclick="switchTab('users')">
             👥 View Users
         </button>
-        <a href="/week1-brenda/week1b/index.php"
+        <a href="/vintage-vault/week1b/index.php"
            class="ad-action-btn secondary" target="_blank">
             🌐 View Store
         </a>

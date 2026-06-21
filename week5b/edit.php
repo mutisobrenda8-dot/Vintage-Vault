@@ -8,7 +8,7 @@ require 'includes/header.php';
 
 $id = $_GET['id'] ?? null;
 if (!$id || !is_numeric($id)) {
-    header('Location: /week1-brenda/Week5b/index.php');
+    header('Location: /vintage-vault/week1b//index.php');
     exit;
 }
 
@@ -18,7 +18,7 @@ $stmt->execute([$id]);
 $product = $stmt->fetch();
 
 if (!$product) {
-    header('Location: /week1-brenda/Week5b/index.php');
+    header('Location: /vintage-vault/week1b//index.php');
     exit;
 }
 
@@ -49,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $category_id, $name, $description, $price, $stock, $id
         ]);
 
-        header('Location: /week1-brenda/Week5b/index.php?updated=1');
+        header('Location: /vintage-vault/week1b//index.php?updated=1');
         exit;
     }
 }
@@ -59,7 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div style="max-width:600px; margin:0 auto;">
 
         <div style="margin-bottom:24px;">
-            <a href="/week1-brenda/Week5b/index.php"
+            <a href="/vintage-vault/week1b//index.php"
                style="font-size:0.78rem; letter-spacing:1px;
                       text-transform:uppercase; color:var(--vv-muted);">
                 ← Back to Products
@@ -194,7 +194,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             class="btn btn-vv-primary px-4 py-2">
                         💾 Save Changes
                     </button>
-                    <a href="/week1-brenda/Week5b/index.php"
+                    <a href="/vintage-vault/week1b//index.php"
                        class="btn btn-vv-primary px-4 py-2"
                        style="background:var(--vv-parchment);
                               color:var(--vv-brown);">

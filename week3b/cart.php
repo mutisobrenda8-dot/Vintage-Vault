@@ -4,7 +4,7 @@ require 'db.php';
 require 'includes/header.php';
 
 if (!isset($_SESSION['user_id'])) {
-    header('Location: /week1-brenda/week3b/login.php');
+    header('Location: /vintage-vault/week3b//login.php');
     exit;
 }
 
@@ -41,7 +41,7 @@ $cartTotal = array_sum(
                       margin-bottom:16px;">
                 Your cart is empty
             </p>
-            <a href="/week1-brenda/week3b/shop.php" class="btn btn-vv-primary px-4">
+            <a href="/vintage-vault/week3b//shop.php" class="btn btn-vv-primary px-4">
                 Browse the Shop
             </a>
         </div>
@@ -155,12 +155,12 @@ $cartTotal = array_sum(
                         $<?= number_format($cartTotal, 2) ?>
                     </span>
                 </div>
-                <a href="/week1-brenda/week3b/checkout.php"
+                <a href="/vintage-vault/week3b//checkout.php"
                    class="btn btn-vv-primary w-100 py-2"
                    style="text-align:center; display:block;">
                     Proceed to Checkout →
                 </a>
-                <a href="/week1-brenda/week3b/shop.php"
+                <a href="/vintage-vault/week3b//shop.php"
                    style="display:block; text-align:center;
                           margin-top:12px; font-size:0.8rem;
                           color:var(--vv-muted);">

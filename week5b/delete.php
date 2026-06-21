@@ -13,6 +13,6 @@ if ($id && is_numeric($id)) {
     )->execute([$id]);
 }
 
-header('Location: /week1-brenda/Week5b/index.php?deleted=1');
+header('Location: /vintage-vault/week1b//index.php?deleted=1');
 exit;
 ?>

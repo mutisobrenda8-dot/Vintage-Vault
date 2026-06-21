@@ -1,8 +1,8 @@
 <?php
 // Week5/db.php
 $host   = 'localhost';
-$port   = '3307';
-$dbname = 'vintage_vault_db';
+$port   = '3306';
+$dbname = 'vintage-vault_db';
 $user   = 'root';
 $pass   = '';
 

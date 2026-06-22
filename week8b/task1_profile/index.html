@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brenda Mutiso — Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<script>
+// Animate skill bars when they scroll into view
+const fills = document.querySelectorAll('.skill-fill');
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const el = entry.target;
+            const target = el.style.width;
+            el.style.width = '0';
+            setTimeout(() => {
+                el.style.transition = 'width 1.2s ease-out';
+                el.style.width = target;
+            }, 100);
+            observer.unobserve(el);
+        }
+    });
+}, { threshold: 0.3 });
+
+fills.forEach(f => observer.observe(f));
+</script>
+<body>
+
+<!-- Floating particles background -->
+<div class="particles">
+    <span></span><span></span><span></span>
+    <span></span><span></span><span></span>
+</div>
+
+<!-- HERO SECTION -->
+<header class="hero">
+    <div class="hero-inner">
+        <div class="avatar-wrap">
+            <img src="images/avatar.jpg"
+                 alt="Brenda Mutiso profile photo"
+                 class="avatar-img">
+            <div class="avatar-ring"></div>
+        </div>
+        <div class="hero-text">
+            <p class="hero-label">✦ Portfolio</p>
+            <h1>Brenda <span class="gold">Mutiso</span></h1>
+            <p class="hero-role">BBIT Student &nbsp;·&nbsp; Full-Stack Developer</p>
+            <p class="hero-tagline">
+                Building real, working systems — not just theory.
+            </p>
+            <div class="hero-badges">
+                <span class="badge">PHP &amp; MySQL</span>
+                <span class="badge">JavaScript</span>
+                <span class="badge">Bootstrap 5</span>
+                <span class="badge">Git</span>
+            </div>
+        </div>
+    </div>
+    <div class="hero-scroll">scroll down ↓</div>
+</header>
+
+<!-- ABOUT -->
+<section class="section about-section">
+    <div class="section-inner">
+        <div class="section-label">✦ About Me</div>
+        <h2>Turning ideas into <em>working products</em></h2>
+        <p class="about-text">
+            I'm a Bachelor of Business and Information Technology student with a
+            hands-on focus on full-stack web development. My capstone
+            project, <strong>Vintage Vault</strong>, is a complete
+            e-commerce platform covering product catalogs, shopping
+            carts, secure authentication with bcrypt password hashing,
+            an admin dashboard with real-time CRUD operations, and a
+            full order tracking system — built entirely with PHP, MySQL
+            and Bootstrap 5. I believe the best way to learn is to
+            build something real.
+        </p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section skills-section">
+    <div class="section-inner">
+        <div class="section-label">✦ Skills</div>
+        <h2>What I work with</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <span class="skill-icon">🐘</span>
+                <span class="skill-name">PHP &amp; MySQL</span>
+                <div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div>
+            </div>
+            <div class="skill-card">
+                <span class="skill-icon">🎨</span>
+                <span class="skill-name">HTML &amp; CSS</span>
+                <div class="skill-bar"><div class="skill-fill" style="width:92%"></div></div>
+            </div>
+            <div class="skill-card">
+                <span class="skill-icon">⚡</span>
+                <span class="skill-name">JavaScript</span>
+                <div class="skill-bar"><div class="skill-fill" style="width:78%"></div></div>
+            </div>
+            <div class="skill-card">
+                <span class="skill-icon">📱</span>
+                <span class="skill-name">Responsive Design</span>
+                <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+            </div>
+            <div class="skill-card">
+                <span class="skill-icon">🔧</span>
+                <span class="skill-name">Git &amp; GitHub</span>
+                <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+            </div>
+            <div class="skill-card">
+                <span class="skill-icon">📊</span>
+                <span class="skill-name">Data Structures</span>
+                <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact-section">
+    <div class="section-inner">
+        <div class="section-label">✦ Contact</div>
+        <h2>Let's connect</h2>
+        <div class="contact-grid">
+            <a class="contact-card" href="mailto:mutisobrenda8@gmail.com">
+                <div class="contact-icon-wrap">📧</div>
+                <div>
+                    <p class="contact-label">Email</p>
+                    <p class="contact-value">mutisobrenda8@gmail.com</p>
+                </div>
+            </a>
+            <a class="contact-card"
+               href="https://github.com/mutisobrenda8-dot" target="_blank">
+                <div class="contact-icon-wrap">💻</div>
+                <div>
+                    <p class="contact-label">GitHub</p>
+                    <p class="contact-value">mutisobrenda8-dot</p>
+                </div>
+            </a>
+            <div class="contact-card">
+                <div class="contact-icon-wrap">📍</div>
+                <div>
+                    <p class="contact-label">Location</p>
+                    <p class="contact-value">Nairobi, Kenya</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <p>✦ Brenda Mutiso &nbsp;·&nbsp; BBIT Student &nbsp;·&nbsp; 2026 ✦</p>
+</footer>
+
+</body>
+</html>

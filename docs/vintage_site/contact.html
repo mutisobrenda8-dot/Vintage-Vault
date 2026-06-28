@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Vintage Vault</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">Vintage Vault</a>
+        <button class="nav-toggle" id="navToggle">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="nav-menu" id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Collection</a>
+            <a href="training.html">Guide</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<div class="page-hero">
+    <p class="page-hero-eyebrow">✦ We'd love to hear from you</p>
+    <h1>Get in Touch</h1>
+    <p>
+        Questions about an item, want to sell something,
+        or just want to talk vintage?
+    </p>
+</div>
+
+<section class="section">
+    <div class="section-inner">
+
+        <div class="contact-grid">
+
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <div class="section-label">✦ Find Us</div>
+                <h2 class="section-title" style="margin-bottom:24px;">
+                    Contact <em>Details</em>
+                </h2>
+
+                <div class="contact-item">
+                    <span class="contact-item-icon">📧</span>
+                    <div>
+                        <p class="contact-item-label">Email</p>
+                        <p class="contact-item-value">
+                            hello@vintagevault.co.ke
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span class="contact-item-icon">📱</span>
+                    <div>
+                        <p class="contact-item-label">Phone / WhatsApp</p>
+                        <p class="contact-item-value">+254 700 000 000</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span class="contact-item-icon">📍</span>
+                    <div>
+                        <p class="contact-item-label">Location</p>
+                        <p class="contact-item-value">
+                            Nairobi, Kenya<br>
+                            Viewings by appointment
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span class="contact-item-icon">🕐</span>
+                    <div>
+                        <p class="contact-item-label">Response Time</p>
+                        <p class="contact-item-value">
+                            Usually within 24 hours
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span class="contact-item-icon">💼</span>
+                    <div>
+                        <p class="contact-item-label">Selling to Us</p>
+                        <p class="contact-item-value">
+                            Have vintage items to sell? We buy
+                            individual pieces and full collections.
+                            Send us photos and we'll get back to you.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h3>Send us a Message</h3>
+
+                <div id="formSuccess" class="alert-success"
+                     style="display:none;">
+                    ✅ Message sent! We'll get back to you within 24 hours.
+                </div>
+
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">First Name *</label>
+                            <input type="text" class="form-control"
+                                   placeholder="Jane" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Last Name *</label>
+                            <input type="text" class="form-control"
+                                   placeholder="Smith" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Email Address *</label>
+                        <input type="email" class="form-control"
+                               placeholder="you@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Subject</label>
+                        <select class="form-control">
+                            <option value="">Select a topic</option>
+                            <option>Question about an item</option>
+                            <option>I want to sell something</option>
+                            <option>Authentication request</option>
+                            <option>General enquiry</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Message *</label>
+                        <textarea class="form-control" rows="5"
+                                  placeholder="Tell us what's on your mind..."
+                                  required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary"
+                            style="width:100%; padding:14px;">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-logo">Vintage Vault</div>
+                <p class="footer-tagline">Curating history, one piece at a time.</p>
+            </div>
+            <div>
+                <div class="footer-heading">Explore</div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="products.html">Collection</a>
+                    <a href="training.html">Collector's Guide</a>
+                </div>
+            </div>
+            <div>
+                <div class="footer-heading">Categories</div>
+                <div class="footer-links">
+                    <a href="products.html">Cameras</a>
+                    <a href="products.html">Vinyl Records</a>
+                    <a href="products.html">Books</a>
+                    <a href="products.html">Jewellery</a>
+                </div>
+            </div>
+            <div>
+                <div class="footer-heading">Contact</div>
+                <div class="footer-links">
+                    <a href="contact.html">Get in Touch</a>
+                    <a href="contact.html">Sell to Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 Vintage Vault. All rights reserved.</span>
+            <span>Nairobi, Kenya</span>
+        </div>
+    </div>
+</footer>
+
+<script>
+const toggle = document.getElementById('navToggle');
+const menu   = document.getElementById('navMenu');
+toggle.addEventListener('click', () => menu.classList.toggle('open'));
+
+// Form demo submission
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    document.getElementById('formSuccess').style.display = 'block';
+    this.reset();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
+
+</body>
+</html>

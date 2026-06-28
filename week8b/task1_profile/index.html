@@ -7,26 +7,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
-<script>
-// Animate skill bars when they scroll into view
-const fills = document.querySelectorAll('.skill-fill');
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const el = entry.target;
-            const target = el.style.width;
-            el.style.width = '0';
-            setTimeout(() => {
-                el.style.transition = 'width 1.2s ease-out';
-                el.style.width = target;
-            }, 100);
-            observer.unobserve(el);
-        }
-    });
-}, { threshold: 0.3 });
-
-fills.forEach(f => observer.observe(f));
-</script>
 <body>
 
 <!-- Floating particles background -->
@@ -86,41 +66,66 @@ fills.forEach(f => observer.observe(f));
     <div class="section-inner">
         <div class="section-label">✦ Skills</div>
         <h2>What I work with</h2>
+
         <div class="skills-grid">
+
             <div class="skill-card">
                 <span class="skill-icon">🐘</span>
                 <span class="skill-name">PHP &amp; MySQL</span>
-                <div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div>
+
+                <div class="skill-bar">
+                    <div class="skill-fill" data-width="88%"></div>
+                </div>
             </div>
+
             <div class="skill-card">
                 <span class="skill-icon">🎨</span>
                 <span class="skill-name">HTML &amp; CSS</span>
-                <div class="skill-bar"><div class="skill-fill" style="width:92%"></div></div>
+
+                <div class="skill-bar">
+                    <div class="skill-fill" data-width="92%"></div>
+                </div>
             </div>
+
             <div class="skill-card">
                 <span class="skill-icon">⚡</span>
                 <span class="skill-name">JavaScript</span>
-                <div class="skill-bar"><div class="skill-fill" style="width:78%"></div></div>
+
+                <div class="skill-bar">
+                    <div class="skill-fill" data-width="78%"></div>
+                </div>
             </div>
+
             <div class="skill-card">
                 <span class="skill-icon">📱</span>
                 <span class="skill-name">Responsive Design</span>
-                <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+
+                <div class="skill-bar">
+                    <div class="skill-fill" data-width="85%"></div>
+                </div>
             </div>
+
             <div class="skill-card">
                 <span class="skill-icon">🔧</span>
                 <span class="skill-name">Git &amp; GitHub</span>
-                <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+
+                <div class="skill-bar">
+                    <div class="skill-fill" data-width="75%"></div>
+                </div>
             </div>
+
             <div class="skill-card">
                 <span class="skill-icon">📊</span>
                 <span class="skill-name">Data Structures</span>
-                <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+
+                <div class="skill-bar">
+                    <div class="skill-fill" data-width="80%"></div>
+                </div>
             </div>
+
         </div>
     </div>
 </section>
-
 <!-- CONTACT -->
 <section class="section contact-section">
     <div class="section-inner">
@@ -156,6 +161,30 @@ fills.forEach(f => observer.observe(f));
 <footer class="site-footer">
     <p>✦ Brenda Mutiso &nbsp;·&nbsp; BBIT Student &nbsp;·&nbsp; 2026 ✦</p>
 </footer>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
+    const fills = document.querySelectorAll(".skill-fill");
+
+    const observer = new IntersectionObserver((entries) => {
+
+        entries.forEach(entry => {
+
+            if(entry.isIntersecting){
+
+                entry.target.style.width = entry.target.dataset.width;
+
+                observer.unobserve(entry.target);
+
+            }
+
+        });
+
+    });
+
+    fills.forEach(fill => observer.observe(fill));
+
+});
+</script>
 </body>
 </html>

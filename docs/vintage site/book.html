@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hemingway — Old Man & the Sea — Vintage Vault</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+.detail-wrapper { max-width:1100px; margin:0 auto; padding:40px 20px 60px; }
+.back-link { display:inline-flex; align-items:center; gap:6px; font-size:0.78rem; letter-spacing:1px; text-transform:uppercase; color:var(--muted); text-decoration:none; margin-bottom:32px; transition:color 0.2s; }
+.back-link:hover { color:var(--brown); }
+.detail-grid { display:grid; grid-template-columns:1fr; gap:32px; margin-bottom:48px; }
+.detail-img-wrap { position:relative; border-radius:10px; overflow:hidden; border:1px solid var(--border); }
+.detail-img { width:100%; height:300px; object-fit:cover; display:block; }
+.detail-badge { position:absolute; top:14px; left:14px; background:var(--dark); color:var(--gold2); font-size:0.65rem; letter-spacing:2px; text-transform:uppercase; padding:4px 12px; border-radius:4px; }
+.detail-info { display:flex; flex-direction:column; gap:16px; }
+.detail-category { font-size:0.68rem; letter-spacing:3px; text-transform:uppercase; color:var(--gold); }
+.detail-name { font-family:'Playfair Display',serif; font-size:2rem; color:var(--dark); font-style:italic; line-height:1.2; }
+.detail-year { font-size:0.78rem; letter-spacing:2px; text-transform:uppercase; color:var(--muted); }
+.detail-price { font-family:'Playfair Display',serif; font-size:2.2rem; color:var(--rose); font-weight:700; }
+.detail-stock { display:inline-block; padding:4px 14px; border-radius:12px; font-size:0.72rem; letter-spacing:1px; text-transform:uppercase; font-weight:700; background:#fef3cd; color:#856404; width:fit-content; }
+.detail-desc { font-size:0.95rem; color:var(--muted); line-height:1.9; padding:16px; background:var(--card-bg); border:1px solid var(--border); border-radius:6px; }
+.detail-specs { display:flex; flex-direction:column; border:1px solid var(--border); border-radius:6px; overflow:hidden; }
+.spec-row { display:flex; padding:10px 16px; border-bottom:1px solid var(--border); font-size:0.85rem; }
+.spec-row:last-child { border-bottom:none; }
+.spec-label { width:140px; flex-shrink:0; font-size:0.68rem; letter-spacing:1.5px; text-transform:uppercase; color:var(--muted); padding-top:2px; }
+.spec-value { color:var(--text); }
+.btn-add { background:var(--dark); color:var(--gold); padding:14px 28px; font-size:0.78rem; letter-spacing:2px; text-transform:uppercase; font-weight:700; border-radius:4px; border:none; cursor:pointer; transition:all 0.2s; width:100%; }
+.btn-add:hover { background:var(--brown); color:#fff; transform:translateY(-2px); }
+.related-grid { display:grid; grid-template-columns:1fr; gap:16px; }
+.related-card { display:flex; gap:14px; background:var(--card-bg); border:1px solid var(--border); border-radius:8px; overflow:hidden; text-decoration:none; transition:transform 0.2s; }
+.related-card:hover { transform:translateY(-2px); }
+.related-img { width:90px; height:90px; object-fit:cover; flex-shrink:0; }
+.related-body { padding:12px; display:flex; flex-direction:column; justify-content:center; }
+.related-name { font-family:'Playfair Display',serif; font-size:0.9rem; color:var(--dark); margin-bottom:4px; }
+.related-price { font-size:0.88rem; color:var(--rose); font-weight:700; }
+@media (min-width:768px) {
+    .detail-grid { grid-template-columns:1fr 1fr; gap:48px; }
+    .detail-img { height:420px; }
+    .related-grid { grid-template-columns:repeat(3,1fr); }
+}
+@media (min-width:1024px) { .detail-img { height:500px; } }
+</style>
+</head>
+<body>
+
+<header class="showcase-header">
+    <div class="header-ornament">✦ ── ── ── ✦</div>
+    <h1>Vintage <span>Vault</span></h1>
+    <p>A curated showcase of timeless treasures</p>
+    <div class="header-ornament">✦ ── ── ── ✦</div>
+</header>
+
+<div class="detail-wrapper">
+
+    <a href="index.html" class="back-link">← Back to Collection</a>
+
+    <div class="detail-grid">
+        <div class="detail-img-wrap">
+            <img src="images/book.jpg"
+                 alt="Hemingway Old Man and the Sea first edition"
+                 class="detail-img">
+            <span class="detail-badge">Books</span>
+        </div>
+
+        <div class="detail-info">
+            <div class="detail-category">✦ Rare Books</div>
+            <h1 class="detail-name">
+                Hemingway — The Old Man and the Sea
+            </h1>
+            <p class="detail-year">First Edition Hardcover · 1952</p>
+            <div class="detail-price">$220.00</div>
+            <span class="detail-stock">⚠ Only 1 Left</span>
+
+            <p class="detail-desc">
+                A genuine first edition of one of the most celebrated
+                novels of the 20th century — Ernest Hemingway's
+                Pulitzer Prize-winning masterpiece, published in 1952.
+                The hardcover boards are firm and square. Minor foxing
+                on the page edges as expected for a book of this age.
+                The text block is clean throughout. No dust jacket,
+                but the cloth is tight and the spine is strong. An
+                extraordinary addition to any serious collection.
+            </p>
+
+            <div class="detail-specs">
+                <div class="spec-row">
+                    <span class="spec-label">Author</span>
+                    <span class="spec-value">Ernest Hemingway</span>
+                </div>
+                <div class="spec-row">
+                    <span class="spec-label">Year</span>
+                    <span class="spec-value">1952 (First Edition)</span>
+                </div>
+                <div class="spec-row">
+                    <span class="spec-label">Publisher</span>
+                    <span class="spec-value">Charles Scribner's Sons</span>
+                </div>
+                <div class="spec-row">
+                    <span class="spec-label">Format</span>
+                    <span class="spec-value">Hardcover, cloth boards</span>
+                </div>
+                <div class="spec-row">
+                    <span class="spec-label">Condition</span>
+                    <span class="spec-value">Very Good (no DJ)</span>
+                </div>
+                <div class="spec-row">
+                    <span class="spec-label">Notable</span>
+                    <span class="spec-value">Pulitzer Prize, 1953</span>
+                </div>
+            </div>
+
+            <button class="btn-add"
+                    onclick="alert('In the live store this adds to your cart!')">
+                🛒 Add to Cart
+            </button>
+        </div>
+    </div>
+
+    <!-- Related -->
+    <div>
+        <div style="display:flex; align-items:center; gap:16px; margin-bottom:24px;">
+            <span style="flex:1; height:1px; background:linear-gradient(90deg,transparent,var(--gold),transparent);"></span>
+            <span style="font-family:'Playfair Display',serif; font-style:italic; color:var(--text);">You may also like</span>
+            <span style="flex:1; height:1px; background:linear-gradient(90deg,transparent,var(--gold),transparent);"></span>
+        </div>
+        <div class="related-grid">
+            <a href="camera.html" class="related-card">
+                <img src="images/camera.jpg" alt="Olympus OM-1" class="related-img">
+                <div class="related-body">
+                    <p class="related-name">Olympus OM-1</p>
+                    <p class="related-price">$148.00</p>
+                </div>
+            </a>
+            <a href="vinyl.html" class="related-card">
+                <img src="images/vinyl.jpg" alt="Miles Davis vinyl" class="related-img">
+                <div class="related-body">
+                    <p class="related-name">Miles Davis — Kind of Blue</p>
+                    <p class="related-price">$65.00</p>
+                </div>
+            </a>
+            <a href="watch.html" class="related-card">
+                <img src="images/watch.jpg" alt="Antique pocket watch" class="related-img">
+                <div class="related-body">
+                    <p class="related-name">Antique Pocket Watch</p>
+                    <p class="related-price">$225.00</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<footer style="background:var(--dark); text-align:center; padding:20px; font-size:0.72rem; letter-spacing:2px; color:var(--gold); text-transform:uppercase; border-top:2px solid rgba(201,148,58,0.3);">
+    ✦ Vintage Vault &nbsp;·&nbsp; Curating history, one piece at a time ✦
+</footer>
+
+</body>
+</html>

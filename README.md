@@ -8,3 +8,4 @@
 - [week5b](./week5b)
 - [week6b](./week6b)
 - [week7b](./week7b)
+- [week8b](./week8b)
